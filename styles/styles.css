@@ -1,22 +1,29 @@
+:root {
+    --pading: 10px;
+    --color-primary: steelblue;
+    --text-align-center: center;
+
+}
+
 nav {
-    background-color: steelblue;
-    padding: 10px;
+    background-color: var(--color-primary);
+    padding: var(--pading);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: var(--pading);;
 }
 
 h1 {
-    color: steelblue;
+    color: var(--color-primary);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--color-primary);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -36,7 +43,7 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--text-align-center);
 }
 
 aside img {
@@ -47,5 +54,5 @@ aside img {
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
+    text-align: var(--text-align-center);
 }
