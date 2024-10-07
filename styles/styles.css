@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 :root {
@@ -47,12 +46,17 @@ main {
 aside {
     width: 20rem;
     text-align: var(--text-align-center);
+    position: relative;
 }
+
+aside h2 {
+    position: relative;
+}
+
 
 aside img {
     width: 200px;
     height: auto;
-    position: relative;
     top: 47px;
     left: 150px;
 }
