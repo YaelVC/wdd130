@@ -54,6 +54,7 @@ p {
     text-align: center;
     position: absolute;
     bottom: 45rem;
+    color: var(--accent-color-three);
 }
 
 .hero article {
@@ -70,6 +71,10 @@ p {
 .hero article img {
     width: 200px;
     float: inline-end;
+}
+
+.hero article p {
+    color: var(--secondary-color);
 }
 
 .hero img {
@@ -145,6 +150,7 @@ header {
     padding: 1rem;
     align-content: center;
     text-align: justify;
+    color: var(--secondary-color);
 }
 
 .item-2{
