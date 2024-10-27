@@ -19,6 +19,8 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -85,4 +87,78 @@ p {
     width: 2rem;
     height: auto;
 }
+
+header {
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 10fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 100vw;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+    text-align: right;
+}
+
+.navigation a {
+	flex: 1 1 100%;
+    display: block;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: var(--accent-color-one);
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+/* Styles for section history*/
+.history {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas: 
+        'title title title'
+        'pharagraphOne figure pharagraphTwo';
+    gap: 10px;
+}
+
+.item-1 {
+    grid-area: title;
+    text-align: center;
+}
+
+.item-p {
+    padding: 1rem;
+    align-content: center;
+    text-align: justify;
+}
+
+.item-2{
+    grid-area: pharagraphOne;
+}
+
+.item-3 {
+    grid-area: figure;
+}
+
+.item-3 img{
+    width: 400px;
+    height: auto;
+}
+
+.item-3 figcaption {
+    position: relative;
+    top: -25px;
+    left: 5px;
+    color: var(--accent-color-three);
+}
+
+.item-4 {
+    grid-area: pharagraphTwo;
+}
+
 
