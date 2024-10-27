@@ -180,6 +180,10 @@ header {
     margin: 2rem 0;
 }
 
+.container figcaption {
+    text-align: center;
+}
+
 .item:nth-child(1) {
     flex: 1 1 100%;
     text-align: center;
