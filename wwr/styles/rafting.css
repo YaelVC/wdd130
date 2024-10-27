@@ -83,9 +83,19 @@ p {
     display: block;
 }
 
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: -30px;
+    left: 550px;
+}
+
 .sociallinks a img {
     width: 2rem;
     height: auto;
+    margin: 0 1rem;
 }
 
 header {
@@ -161,4 +171,31 @@ header {
     grid-area: pharagraphTwo;
 }
 
+/* Align section with figures */
+.container {
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
 
+.item:nth-child(1) {
+    flex: 1 1 100%;
+    text-align: center;
+
+}
+
+.item-fig img {
+    width: calc(100vw/5 - 50px);
+    height: 300px;
+}
+
+/* Styles for footer */
+footer {
+    margin-top: 4rem;
+}
+
+footer p {
+    text-align: center;
+}
