@@ -209,3 +209,14 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* Styles for page contact */
+.name {
+   color: var(--accent-color-one);
+   font-size: 1.25rem;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
