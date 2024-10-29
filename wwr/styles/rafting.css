@@ -231,12 +231,20 @@ footer p {
 }
 
 .information {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  grid-template-columns: 500px 1fr;
-  justify-items: center;
   margin-bottom: 4rem;
+  gap: 1rem;
 }
+
+.contenido {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
 
 /* Styles for Contact Page */
 form {
@@ -344,6 +352,8 @@ iframe {
     inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 400px;
 }
 
 .wireframe {
