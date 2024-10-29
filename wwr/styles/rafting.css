@@ -1,222 +1,349 @@
 :root {
-    --primary-color: #01161E;
-    --secondary-color: #124559;
-    --accent-color-one: #598392;
-    --accent-color-two: #aec3b0;
-    --accent-color-three: #eff6e0;
+  --primary-color: #01161e;
+  --secondary-color: #124559;
+  --accent-color-one: #598392;
+  --accent-color-two: #aec3b0;
+  --accent-color-three: #eff6e0;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0 5em;
-    padding: 0;
+  margin: 0 5em;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
 }
 
 h1 {
-    color: var(--primary-color);
-    font-family: "Baloo Paaji 2", Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--primary-color);
+  font-family: "Baloo Paaji 2", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: "Baloo Paaji 2", Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--secondary-color);
-    margin: 0;
-    padding: 0;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Baloo Paaji 2", Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    color: var(--primary-color);
-    font-family: "Libre Franklin", sans-serif; 
+  color: var(--primary-color);
+  font-family: "Libre Franklin", sans-serif;
 }
 
-
 .hero {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 .hero h1 {
-    width: 100%;
-    background-color: rgba(89, 131, 146, 0.3);
-    text-align: center;
-    position: absolute;
-    bottom: 45rem;
-    color: var(--accent-color-three);
+  width: 100%;
+  background-color: rgba(89, 131, 146, 0.3);
+  text-align: center;
+  position: absolute;
+  bottom: 45rem;
+  color: var(--accent-color-three);
 }
 
 .hero article {
-    background-color: rgba(174, 195, 176, 0.6);
-    width: 90%;
-    height: 10rem;
-    padding: 1rem;
-    position: absolute;
-    bottom: 32rem;
-    left: 4rem;
-    vertical-align: middle;
+  background-color: rgba(174, 195, 176, 0.6);
+  width: 90%;
+  height: 10rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 32rem;
+  left: 4rem;
+  vertical-align: middle;
 }
 
 .hero article img {
-    width: 200px;
-    float: inline-end;
+  width: 200px;
+  float: inline-end;
 }
 
 .hero article p {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 .img-section {
-    display: block;
+  display: block;
 }
 
 .sociallinks {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-    top: -30px;
-    left: 550px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  top: -30px;
+  left: 550px;
 }
 
 .sociallinks a img {
-    width: 2rem;
-    height: auto;
-    margin: 0 1rem;
+  width: 2rem;
+  height: auto;
+  margin: 0 1rem;
 }
 
 header {
-    margin: 1rem auto;
-	display: grid;
-	grid-template-columns: 120px 10fr;
-	align-items: center;
-	border-bottom: 1px solid #ccc;
-	max-width: 100vw;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 120px 10fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  max-width: 100vw;
 }
 
 .navigation {
-	display: flex;
-	list-style: none;
-    text-align: right;
+  display: flex;
+  list-style: none;
+  text-align: right;
 }
 
 .navigation a {
-	flex: 1 1 100%;
-    display: block;
-	padding: 20px;
-	text-decoration: none;
+  flex: 1 1 100%;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
 }
 
 .navigation a:hover {
-	color: var(--accent-color-one);
-	font-weight: 700;
-	text-decoration: underline;
+  color: var(--accent-color-one);
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /* Styles for section history*/
 .history {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-areas: 
-        'title title title'
-        'pharagraphOne figure pharagraphTwo';
-    gap: 10px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "pharagraphOne figure pharagraphTwo";
+  gap: 10px;
 }
 
 .item-1 {
-    grid-area: title;
-    text-align: center;
+  grid-area: title;
+  text-align: center;
 }
 
 .item-p {
-    padding: 1rem;
-    align-content: center;
-    text-align: justify;
-    color: var(--secondary-color);
+  padding: 1rem;
+  align-content: center;
+  text-align: justify;
+  color: var(--secondary-color);
 }
 
-.item-2{
-    grid-area: pharagraphOne;
+.item-2 {
+  grid-area: pharagraphOne;
 }
 
 .item-3 {
-    grid-area: figure;
+  grid-area: figure;
 }
 
-.item-3 img{
-    width: 400px;
-    height: auto;
+.item-3 img {
+  width: 400px;
+  height: auto;
 }
 
 .item-3 figcaption {
-    position: relative;
-    top: -25px;
-    left: 5px;
-    color: var(--accent-color-three);
+  position: relative;
+  top: -25px;
+  left: 5px;
+  color: var(--accent-color-three);
 }
 
 .item-4 {
-    grid-area: pharagraphTwo;
+  grid-area: pharagraphTwo;
 }
 
 /* Align section with figures */
 .container {
-    display: flex;
-    column-gap: 10px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 2rem 0;
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.container h1 {
+    margin-bottom: 1rem;
+}
+
+.container figure img {
+    border-radius: 15px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .container figcaption {
-    text-align: center;
+  text-align: center;
 }
 
 .item:nth-child(1) {
-    flex: 1 1 100%;
-    text-align: center;
-
+  flex: 1 1 100%;
+  text-align: center;
 }
 
 .item-fig img {
-    width: calc(100vw/5 - 50px);
-    height: 300px;
+  width: calc(100vw / 5 - 50px);
+  height: 300px;
 }
 
 /* Styles for footer */
 footer {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 footer p {
-    text-align: center;
+  text-align: center;
 }
 
 /* Styles for page contact */
 .name {
-   color: var(--accent-color-one);
-   font-size: 1.25rem;
+  color: var(--accent-color-one);
+  font-size: 1.25rem;
 }
 
 .information {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 500px 1fr;
+  justify-items: center;
+  margin-bottom: 4rem;
 }
+
+/* Styles for Contact Page */
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: var(--accent-color-three);
+  display: grid;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+legend {
+  padding: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.3em;
+}
+
+legend {
+  font-family: "Baloo Paaji 2", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+label {
+  text-align: left;
+  padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: left;
+}
+
+button {
+  margin: 1rem;
+  background-color: var(--primary-color);
+  color: #ededed;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.form-group {
+  display: grid;
+  margin: 0.5rem 0;
+  gap: 0.5rem;
+}
+
+.radio {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group p {
+    margin-bottom: 1rem;
+}
+
+.item-check {
+    grid-template-columns: 30px 2fr;
+}
+
+.information span {
+    font-weight: bold;
+}
+
+.address {
+    display: block;
+}
+
+.information p {
+    margin-bottom: 1rem;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
