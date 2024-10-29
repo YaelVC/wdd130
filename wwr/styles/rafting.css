@@ -291,7 +291,6 @@ textarea {
 input[type="checkbox"] {
   width: 22px;
   height: 22px;
-  vertical-align: left;
 }
 
 button {
@@ -347,3 +346,8 @@ iframe {
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
+.wireframe {
+    text-align: center;
+    font-family: "Baloo Paaji 2", Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
